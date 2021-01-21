@@ -1,0 +1,185 @@
+/*Import reset.css*/
+@import url(reset.css);
+
+/* color scheme:  http://paletton.com/#uid=53d0+0kllllaFw0g0qFqFg0w0aF */
+
+
+html {
+    background-color: #AA3939;
+    color: white;
+    font-family: 'Impact', Charcoal, sans-serif;
+    font-size: 62.5%; /* 10 px */
+}
+
+body {
+    line-height: 1.4;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    color: #FFAAAA;
+    text-align: center;
+    clear: both;
+    padding: 0.5rem 1.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #FFAAAA;
+    text-align: center;
+}
+
+    h2 a {
+        font-size: inherit;
+    }
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* Webpage Layout */
+#WebPage {
+    width: 1000px;
+    margin: 1.5rem auto;
+}
+
+/* Banner Layout */
+#banner {
+    background-color: #88A236;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #333333;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+    #banner a#photo {
+        float: center;
+    }
+
+        #banner a#photo img {
+            height: 127px;
+            width: 400px;
+            border-radius: 20px;
+        }
+
+    #banner nav {
+        background-color: #B1CA65;
+        border-radius: 10px;
+        padding: 0.5rem 0;
+        overflow: hidden;
+    }
+
+        #banner nav ul {
+            text-align: center;
+        }
+
+        #banner nav li {
+            display: inline;
+        }
+
+        #banner nav a {
+            color: #246C60;
+            padding: 1.0rem 2.0rem;
+        }
+
+        #banner nav caption:hover {
+            background-color: #DFF2A2;
+        }
+
+/* Content */
+#Wrapper {
+    background-color: #43877C;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #333333;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+    #Wrapper h2 {
+        padding: 1.0rem 0;
+    }
+
+#SideLinks {
+    width: 15%;
+    float: left;
+}
+
+    #SideLinks ul {
+        text-align: center;
+    }
+
+    #SideLinks li {
+        padding-bottom: 1rem;
+    }
+
+    #SideLinks a {
+        color: #403075
+    }
+
+        #SideLinks a hover {
+            color: #605292;
+            text-decoration: underline;
+        }
+
+/* Articles */
+#Container {
+    width: 85%;
+    float: right;
+    background-color: #6CA299;
+}
+
+    #Container a {
+        color: #403075
+    }
+
+        #Container a hover {
+            color: #605292;
+            text-decoration: underline;
+        }
+
+    #Container p {
+        padding: 0.5rem;
+    }
+
+    #Container hr {
+        border-color: #00362D;
+        border-style: ridge;
+    }
+
+    #Container footer {
+        padding: 0.5rem;
+    }
+
+#Footer {
+    background-color: #877CB0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #333333;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+    #Footer #Logo {
+        float: center;
+    }
+
+    #Footer p {
+        clear: both;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-style: italic;
+    }
