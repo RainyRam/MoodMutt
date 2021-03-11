@@ -1,0 +1,164 @@
+/*Import reset.css*/
+@import url(reset.css);
+
+/* color scheme:  http://paletton.com/#uid=53d0+0kllllaFw0g0qFqFg0w0aF */
+
+
+html {
+    background-color: #AA3939;
+    color: white;
+    font-family: 'Impact', Charcoal, sans-serif;
+    font-size: 62.5%; /* 10 px */
+}
+
+body {
+    line-height: 1.4;
+	float: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    color: #FFAAAA;
+    text-align: center;
+    clear: both;
+    padding: 0.5rem 1.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #FFAAAA;
+    text-align: center;
+}
+
+    h2 a {
+        font-size: inherit;
+    }
+
+h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FFAAAA;
+    text-align: center;
+    clear: both;
+    padding: 0.5rem 1.5rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* Webpage Layout */
+#WebPage {
+    width: 1000px;
+    margin: 1.5rem auto;
+}
+
+/* Banner Layout */
+#banner {
+    background-color: #f0a1a1;
+    border-radius: 25px;
+    /* box-shadow: 5px 5px 5px #333333; */
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 1.5rem;
+	width: 1000px;
+	margin:auto;
+    text-align:center; /*centers horizontally*/
+    line-height:300px; /*same as height and for centering vertically*/
+}
+
+    #banner a#photo {
+        float: left;
+    }
+
+        #banner a#photo img {
+            height: 312px;
+            width: 420px;
+            border-radius: 20px;
+			float: left;
+        }
+
+    #banner nav {
+        background-color: #B1CA65;
+        border-radius: 10px;
+        padding: 0.5rem 0;
+        overflow: hidden;
+    }
+
+        #banner nav ul {
+            text-align: center;
+        }
+
+        #banner nav li {
+            display: inline;
+        }
+
+/* Articles */
+#Container {
+    width: 85%;
+    float: right;
+    background-color: #6CA299;
+}
+
+    #Container a {
+        color: #403075
+    }
+
+        #Container a hover {
+            color: #605292;
+            text-decoration: underline;
+        }
+
+    #Container p {
+        padding: 0.5rem;
+    }
+
+    #Container hr {
+        border-color: #00362D;
+        border-style: ridge;
+    }
+
+    #Container footer {
+        padding: 0.5rem;
+    }
+
+#Footer {
+    background-color: #877CB0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #333333;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+    #Footer #Logo {
+        float: center;
+    }
+
+    #Footer p {
+        clear: both;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-style: italic;
+    }
