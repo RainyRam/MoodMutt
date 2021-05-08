@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MoodMutt</title>
+<link href="MoodMutt.css" rel="stylesheet" type="text/css">
+</head>
+	
+<!main area>
+<h1>MoodMutt</h1>
+<body>
+	 <div class="row">
+  <div class="column">
+		 <img src="https://lh3.googleusercontent.com/d/1hTrWluFa7bOFzoZ1kSRMtRe3LftJTMNC" width="312" height="420" alt="">
+		 </div>
+  <div class="column">
+	  <section id="banner" >
+		
+<form  id="form">
+<p>How did you feel waking up this morning?</p>
+	<p><label><input type="radio" name="feel" id="" value="happy" />great!</label></p>
+	<p><label><input type="radio" name="feel" id="" value="angry" />grumpy</label></p>
+	<p><label><input type="radio" name="feel" id="" value="sad" />meh</label></p>
+<p>-</p>
+<p>What are your plans for today?</p>
+	<p><label><input type="radio" name="activity" id="" value="happy" />Hang out with friends</label></p>
+	<p><label><input type="radio" name="activity" id="" value="angry" />stay inside</label></p>
+	<p><label><input type="radio"  name="activity" id="" value="sad" />not sure</label></p>
+<p>-</p>
+<p>If you could choose what to do right now, what would that be?</p>
+	<p><label><input type="radio" name="wish" id="" value="happy" />Go outside, it's nice out!</label></p>
+<p><label><input type="radio" name="wish" id="" value="sad" />Stay inside, avoid people</label></p>
+<p><label><input type="radio" name="wish" id="" value="angry" />headbang to some music, get some tension out</label></p>
+<p>-</p>
+<p>Pick a color that resonates with you currently.</p>
+<p><label><input type="radio" name="color" id="" value="happy" />Yellow</label>
+<label><input type="radio" name="color" id="" value="sad" />Blue</label>
+<label><input type="radio" name="color" id="" value="angry" />Red</label></p>
+<p>-</p>
+<p id="response">You got <span id="answer"></span></p>
+	<a href="HappyResult.html"><button>Happy</button></a><a href="AngryResult.html"><button>Angry</button></a><a href="SadResult.html"><button>Sad</button></a>
+</form>
+		   
+	</section>
+		 </div>
+		 
+<script>
+ 
+    
+	document.getElementById("form").onsubmit=function() {
+	   //displays the response DOM element
+    document.getElementById("response").style.display = "block";
+    
+    //resets the DOM element on submit
+    document.getElementById("answer").innerHTML = "";
+    
+	  feel = document.querySelector('input[name = "feel"]:checked').value;
+	   
+	  activity = document.querySelector('input[name = "activity"]:checked').value;
+	   
+	  wish = document.querySelector('input[name = "wish"]:checked').value;
+		
+		color = document.querySelector('input[name = "color"]:checked').value;
+	    
+	  // initialize score variables 
+	  happy = 0;
+	  angry = 0;
+	  sad = 0;
+	  
+	  //function to calculate score for each question
+	  function eachscore(x){
+	  if(x == "happy") { happy = happy + 1}
+	  if(x == "angry") { angry = angry + 1}
+	  if(x == "sad") { sad = sad + 1}
+	  }
+	  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
+	  
+	  //call function for each question
+	  eachscore(eval("feel"));
+	  eachscore(eval("activity"));
+		eachscore(eval("wish"));
+	  eachscore(eval("color"));
+	  
+	  
+	  
+	  all = [happy, angry, sad];
+	  
+	//get the max score  in the array
+	maxscore = Math.max.apply(Math,all);
+	
+    // object holding scores and feedback	
+    scores = [{index:0, feedback: "Happy"},
+    {index:1, feedback: "Angry"},
+    {index:2, feedback: "Sad"}];
+	
+    //figure out which index # holds the max score 
+	for(i=0; i<all.length; i++) {
+	if(all[i]==maxscore) {
+    //this gets one answer, the last one it encounters with a match
+    document.getElementById("answer").innerHTML = scores[i].feedback;
+    
+    //this version would allow for appending multiple answers; replace statement above
+    //document.getElementById("answer").innerHTML += scores[i].feedback + "; ";
+	}
+	}
+		   
+return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+	
+
+</script>
+		 
+</div> 
+
+<!footer>
+	<section id="footer">
+		<h3>Created by Joey Sacino / RainyRam 2020-21</h3>
+	</section>
+	
+</body>
+</html>
