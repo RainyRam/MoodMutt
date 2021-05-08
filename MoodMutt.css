@@ -28,6 +28,19 @@ body {
   clear: both;
 }
 
+button{
+	background-color: #AA3939;
+  	border: none;
+  	color: white;
+  	padding: 12px 13px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 3rem;
+	border-radius: 12px;
+
+}
+
 h1 {
     font-weight: bold;
     font-size: 5rem;
@@ -61,7 +74,7 @@ h4 {
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
 }
 
 a {
@@ -72,7 +85,7 @@ a {
 /* Webpage Layout */
 #WebPage {
     width: 1000px;
-    margin: 1.5rem auto;
+    margin: 0.5rem auto;
 }
 
 /* Banner Layout */
@@ -80,12 +93,12 @@ a {
     background-color: #f0a1a1;
     border-radius: 25px;
     /* box-shadow: 5px 5px 5px #333333; */
-    padding: 1rem 1rem 1rem 1rem;
-    margin-bottom: 1.5rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.11rem;
+    margin-bottom: 1rem;
 	width: 1000px;
 	margin:auto;
     text-align:center; /*centers horizontally*/
-    line-height:300px; /*same as height and for centering vertically*/
+    line-height:50px; /*same as height and for centering vertically*/
 }
 
     #banner a#photo {
@@ -116,7 +129,7 @@ a {
 
 /* Articles */
 #Container {
-    width: 85%;
+    width: 50%;
     float: right;
     background-color: #6CA299;
 }
